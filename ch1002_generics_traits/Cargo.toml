@@ -1,0 +1,6 @@
+[package]
+name = "ch1002_generics_traits"
+version = "0.1.0"
+authors = ["johan"]
+
+[dependencies]

@@ -1,0 +1,6 @@
+[package]
+name = "ch0902_recoverable_errors"
+version = "0.1.0"
+authors = ["johan"]
+
+[dependencies]

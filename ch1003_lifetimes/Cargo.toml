@@ -1,0 +1,6 @@
+[package]
+name = "ch1003_lifetimes"
+version = "0.1.0"
+authors = ["Johan Carlström <johancarlstrom@gmail.com>"]
+
+[dependencies]

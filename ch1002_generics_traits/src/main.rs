@@ -28,6 +28,7 @@
 fn largest<T: PartialOrd + Copy>(list: &[T]) -> &T {
     let mut largest_index = 0;
     let mut largest = list[0];
+    // NOTE: the "&"" below marks the variable as a reference to avoid having to dereference it when using it in the loop body
     for (index, &item) in list.iter().enumerate() {
         if item > largest {
             largest_index = index;

@@ -11,7 +11,7 @@ fn main() {
 
     println!("With text:\n{}", contents);
 }
-il
+
 fn parse_config(args: &[String]) -> (&str, &str) {
     let query = &args[1];
     let filename = &args[2];

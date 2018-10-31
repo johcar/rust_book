@@ -1,5 +1,5 @@
 [package]
-name = "ch1200_minigrep"
+name = "minigrep"
 version = "0.1.0"
 authors = ["johcar <johancarlstrom@gmail.com>"]
 

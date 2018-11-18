@@ -9,12 +9,17 @@ pub struct Config {
 }
 
 impl Config {
-    pub fn new(args: &[String]) -> Result<Config, &'static str> {
-        if args.len() < 3 {
-            return Err("not enough arguments");
-        }
-        let query = args[1].clone();
-        let filename = args[2].clone();
+    pub fn new(mut args: std::env::Args) -> Result<Config, &'static str> {
+        args.next(); // move from binary name
+
+        let query = match args.next() {
+            Some(arg) => arg,
+            None => return Err("Didn't get query string")
+        };
+        let filename = match args.next() {
+            Some(arg) => arg,
+            None => return Err("Didn't get filename")
+        };
 
         let case_insensitive = env::var("CASE_INSENSITIVE").is_err();
 

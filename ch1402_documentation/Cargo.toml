@@ -1,0 +1,6 @@
+[package]
+name = "ch1402_documentation"
+version = "0.1.0"
+authors = ["johcar <johancarlstrom@gmail.com>"]
+
+[dependencies]

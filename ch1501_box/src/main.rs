@@ -16,7 +16,8 @@ use List::{Cons, Nil};
 //}
 
 
-// listing 15-5, will compile because we use a box
+// listing 15-5, will compile because we use a box of known size
+// that then points to the item on the heap
 
 enum List {
     Cons(i32, Box<List>),

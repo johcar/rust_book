@@ -1,0 +1,6 @@
+[package]
+name = "ch1602_message_passing"
+version = "0.1.0"
+authors = ["johcar <johancarlstrom@gmail.com>"]
+
+[dependencies]
